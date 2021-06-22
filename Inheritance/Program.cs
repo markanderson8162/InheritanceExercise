@@ -34,6 +34,36 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            string inches = "in";
+            Birds toucan = new Birds();
+
+            toucan.Name = "Toucan Sam";
+            toucan.Legs = 2;
+            toucan.WingSpan = 8.06;
+            toucan.WarmBlood = true;
+			//string caw = "CAAAAW!";
+
+			Console.WriteLine($"{toucan.BirdSound()}");
+
+			Reptiles gecko = new Reptiles();
+
+            gecko.Name = "Geico";
+            gecko.Legs = 4;
+            gecko.TailLength = 5.2;
+            bool tongue = true;
+            string isTongueUsed = "";
+            if(gecko.UseTongue(tongue))
+			{
+                isTongueUsed = "He stuck his tongue out!";
+			}
+			else
+			{
+                isTongueUsed = "His mouth is closed.";
+			}
+
+            Console.WriteLine($"My bird is named {toucan.Name}. He has {toucan.Legs} legs, his wingspan is {toucan.WingSpan}{inches}, and he is {toucan.WarmBlood}. ");
+            Console.WriteLine($"My lizard is named {gecko.Name}. He has {gecko.Legs} legs, and his tail is {gecko.TailLength}{inches}. {gecko.UseTongue(tongue)} ");
+
         }
     }
 }
