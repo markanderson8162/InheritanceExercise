@@ -43,7 +43,7 @@ namespace Inheritance
             toucan.WarmBlood = true;
 			//string caw = "CAAAAW!";
 
-			Console.WriteLine($"{toucan.BirdSound()}");
+			Console.WriteLine($"My bird sounds like this: {toucan.BirdSound()}");
 
 			Reptiles gecko = new Reptiles();
 
